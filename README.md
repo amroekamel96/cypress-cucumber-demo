@@ -1,5 +1,7 @@
 # Cypress + Cucumber UI Automation Framework (Demo)
 
+![Cypress tests](https://github.com/amroekamel96/cypress-cucumber-demo/actions/workflows/cypress.yml/badge.svg)
+
 A small, readable test automation framework showing how I structure UI tests:
 **Cypress** for execution, **Cucumber (Gherkin)** for BDD scenarios, and the
 **Page Object Model** to keep selectors out of the test logic.
