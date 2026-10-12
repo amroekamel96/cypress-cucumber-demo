@@ -1,0 +1,29 @@
+{
+  "name": "cypress-cucumber-demo",
+  "version": "1.0.0",
+  "description": "Sample UI test automation framework: Cypress + Cucumber (BDD) + Page Object Model, run against the public Sauce Demo practice site.",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:smoke": "cypress run --env tags=@smoke",
+    "test:chrome": "cypress run --browser chrome",
+    "report": "node cucumber-html-report.js"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.17.0",
+    "esbuild": "^0.24.0",
+    "multiple-cucumber-html-reporter": "^3.8.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/support/step_definitions/**/*.js"
+    ],
+    "json": {
+      "enabled": true,
+      "output": "reports/cucumber-report.json"
+    }
+  }
+}
