@@ -8,6 +8,8 @@ The application under test is the public practice site
 [Sauce Demo](https://www.saucedemo.com), which exists for exactly this purpose.
 Its login credentials are published on the site itself.
 
+![Test report](docs/report.png)
+
 ## What is covered
 
 | Feature           | Scenarios                                                                                  |
